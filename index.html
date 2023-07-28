@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examen</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #3374ff;
+}
+
+
+
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"], button[type="button"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos para el contador */
+#countdown {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #FFB600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    height: 64px;
+    width: 64px;
+    vertical-align: middle;
+}
+
+</style>
+<style>
+    /* Estilos adicionales */
+@media screen and (max-width: 600px) {
+    /* Agregamos estilos específicos para pantallas pequeñas */
+    form {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    h1 img {
+        height: 18px;
+        width: 18px;
+    }
+
+    div.question {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    button[type="submit"], button[type="button"] {
+        margin: 10px auto;
+        padding: 8px 16px;
+    }
+}
+</style>
+<body>
+  <h1><img src="Logo.png" alt="Logo"> Colegio Cristiano Peniel</h1>
+    <form id="exam-form">
+        <!-- Agrega aquí las preguntas y opciones del examen -->
+        <form id="exam-form">
+          <!-- Pregunta 1 -->
+  <!-- Pregunta 1 -->
+<p>1. ¿Qué es PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q1" value="a">a) Un lenguaje de programación.<br>
+  <input type="radio" name="q1" value="b">b) Un intérprete de pseudocódigo.<br>
+  <input type="radio" name="q1" value="c">c) Un editor de texto.<br>
+  <input type="radio" name="q1" value="d">d) Una herramienta de diseño gráfico.<br>
+</div>
+<!-- Pregunta 2 -->
+<p>2. ¿En qué universidad se originó el proyecto PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q2" value="a">a) Universidad Nacional del Litoral.<br>
+  <input type="radio" name="q2" value="b">b) Universidad Nacional Autónoma de México.<br>
+  <input type="radio" name="q2" value="c">c) Universidad de Buenos Aires.<br>
+  <input type="radio" name="q2" value="d">d) Universidad Complutense de Madrid.<br>
+</div>
+<!-- Pregunta 3 -->
+<p>3. ¿Cuál es el tipo de pseudocódigo que interpreta PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q3" value="a">a) Pseudocódigo estándar.<br>
+  <input type="radio" name="q3" value="b">b) Pseudocódigo basado en Python.<br>
+  <input type="radio" name="q3" value="c">c) Pseudocódigo basado en C++.<br>
+  <input type="radio" name="q3" value="d">d) Pseudocódigo de la cátedra de Fundamentos de Programación de la UNL.<br>
+</div>
+<!-- Pregunta 4 -->
+<p>4. ¿Qué funcionalidades adicionales incluye PSEINT aparte de ser un intérprete de pseudocódigo?</p>
+<div class="option">
+  <input type="radio" name="q4" value="a">a) Edición de imágenes.<br>
+  <input type="radio" name="q4" value="b">b) Generación de diagramas de flujo.<br>
+  <input type="radio" name="q4" value="c">c) Reproducción de música.<br>
+  <input type="radio" name="q4" value="d">d) Análisis de datos estadísticos.<br>
+</div>
+<!-- Pregunta 5 -->
+<p>5. ¿Bajo qué licencia se distribuye el proyecto PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q5" value="a">a) Licencia MIT.<br>
+  <input type="radio" name="q5" value="b">b) Licencia Apache.<br>
+  <input type="radio" name="q5" value="c">c) Licencia GPL.<br>
+  <input type="radio" name="q5" value="d">d) Licencia Creative Commons.<br>
+</div>
+<!-- Pregunta 6 -->
+<p>6. ¿Dónde se puede descargar PSEINT o conseguir actualizaciones?</p>
+<div class="option">
+  <input type="radio" name="q6" value="a">a) http://pseint.org<br>
+  <input type="radio" name="q6" value="b">b) http://pseint.sourceforge.net<br>
+  <input type="radio" name="q6" value="c">c) http://pseint.edu<br>
+  <input type="radio" name="q6" value="d">d) http://pseint.github.io<br>
+</div>
+<!-- Pregunta 7 -->
+<p>7. ¿Qué funcionalidades se encuentran en la interfaz y el área de trabajo de PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q7" value="a">a) Operaciones matemáticas avanzadas.<br>
+  <input type="radio" name="q7" value="b">b) Creación de gráficos y tablas.<br>
+  <input type="radio" name="q7" value="c">c) Edición de texto enriquecido.<br>
+  <input type="radio" name="q7" value="d">d) Funciones para trabajar con pseudocódigo.<br>
+</div>
+<!-- Pregunta 8 -->
+<p>8. ¿Qué tipos de datos básicos se manejan en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q8" value="a">a) Numérico, carácter y lógico.<br>
+  <input type="radio" name="q8" value="b">b) Entero, flotante y cadena.<br>
+  <input type="radio" name="q8" value="c">c) Numérico, booleano y texto.<br>
+  <input type="radio" name="q8" value="d">d) Decimal, booleano y carácter.<br>
+</div>
+<!-- Pregunta 9 -->
+<p>9. ¿Cuáles son las estructuras de datos que se pueden utilizar en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q9" value="a">a) Arreglos y listas.<br>
+  <input type="radio" name="q9" value="b">b) Pilas y colas.<br>
+  <input type="radio" name="q9" value="c">c) Diccionarios y conjuntos.<br>
+  <input type="radio" name="q9" value="d">d) Únicamente arreglos.<br>
+</div>
+<!-- Pregunta 10 -->
+<p>10. ¿Cuál es la estructura general de un algoritmo en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q10" value="a">a) Inicio ... Fin.<br>
+  <input type="radio" name="q10" value="b">b) Procedimiento ... FinProcedimiento.<br>
+  <input type="radio" name="q10" value="c">c) Proceso ... FinProceso.<br>
+  <input type="radio" name="q10" value="d">d) Función ... FinFunción.<br>
+</div>
+<!-- Pregunta 11 -->
+<p>11. ¿Cuál es la estructura general de un algoritmo en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q11" value="a">a) Inicio ... Fin.<br>
+  <input type="radio" name="q11" value="b">b) Procedimiento ... FinProcedimiento.<br>
+  <input type="radio" name="q11" value="c">c) Proceso ... FinProceso.<br>
+  <input type="radio" name="q11" value="d">d) Función ... FinFunción.<br>
+</div>
+
+<!-- Pregunta 12 -->
+<p>12. ¿Cómo se definen las variables en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q12" value="a">a) Usando la palabra clave "var".<br>
+  <input type="radio" name="q12" value="b">b) Mediante la palabra clave "variable".<br>
+  <input type="radio" name="q12" value="c">c) No es necesario definir variables.<br>
+  <input type="radio" name="q12" value="d">d) Con la instrucción "Dimension".<br>
+</div>
+
+<!-- Pregunta 13 -->
+<p>13. ¿Cuántos tipos de datos simples existen en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q13" value="a">a) 2.<br>
+  <input type="radio" name="q13" value="b">b) 3.<br>
+  <input type="radio" name="q13" value="c">c) 4.<br>
+  <input type="radio" name="q13" value="d">d) 5.<br>
+</div>
+
+<!-- Pregunta 14 -->
+<p>14. ¿Qué tipos de datos incluye el tipo "Numérico" en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q14" value="a">a) Enteros y fraccionarios.<br>
+  <input type="radio" name="q14" value="b">b) Enteros y cadenas de texto.<br>
+  <input type="radio" name="q14" value="c">c) Decimales y lógicos.<br>
+  <input type="radio" name="q14" value="d">d) Enteros, decimales y lógicos.<br>
+</div>
+
+<!-- Pregunta 15 -->
+<p>15. ¿Cuál es el valor máximo que puede tomar el tipo de dato "Lógico" en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q15" value="a">a) VERDADERO.<br>
+  <input type="radio" name="q15" value="b">b) FALSO.<br>
+  <input type="radio" name="q15" value="c">c) CIERTO.<br>
+  <input type="radio" name="q15" value="d">d) FICTICIO.<br>
+</div>
+
+<!-- Pregunta 16 -->
+<p>16. ¿Cómo se encierran los caracteres o cadenas de caracteres en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q16" value="a">a) Entre paréntesis ( ).<br>
+  <input type="radio" name="q16" value="b">b) Entre corchetes [ ].<br>
+  <input type="radio" name="q16" value="c">c) Entre comillas dobles " ".<br>
+  <input type="radio" name="q16" value="d">d) Entre comillas simples ' '.<br>
+</div>
+
+<!-- Pregunta 17 -->
+<p>17. ¿Qué acción crea una variable numérica en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q17" value="a">a) LEER.<br>
+  <input type="radio" name="q17" value="b">b) ASIGNAR.<br>
+  <input type="radio" name="q17" value="c">c) DIMENSIONAR.<br>
+  <input type="radio" name="q17" value="d">d) ESCRIBIR.<br>
+</div>
+
+<!-- Pregunta 18 -->
+<p>18. ¿Qué instrucción se utiliza para ingresar información desde el ambiente (por ejemplo, el teclado) en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q18" value="a">a) LEER.<br>
+  <input type="radio" name="q18" value="b">b) ASIGNAR.<br>
+  <input type="radio" name="q18" value="c">c) DIMENSIONAR.<br>
+  <input type="radio" name="q18" value="d">d) ESCRIBIR.<br>
+</div>
+
+<!-- Pregunta 19 -->
+<p>19. ¿Cuál es la sintaxis correcta para asignar un valor a una variable en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q19" value="a">a) variable = valor;<br>
+  <input type="radio" name="q19" value="b">b) valor <- variable;<br>
+  <input type="radio" name="q19" value="c">c) variable <- valor;<br>
+  <input type="radio" name="q19" value="d">d) valor = variable;<br>
+</div>
+
+<!-- Pregunta 20 -->
+<p>20. ¿Cuál es la instrucción utilizada para mostrar información en la salida (por ejemplo, pantalla) en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q20" value="a">a) LEER.<br>
+  <input type="radio" name="q20" value="b">b) ASIGNAR.<br>
+  <input type="radio" name="q20" value="c">c) DIMENSIONAR.<br>
+  <input type="radio" name="q20" value="d">d) ESCRIBIR.<br>
+</div>
+<!-- Pregunta 21 -->
+<p>21. ¿Qué tipos de datos básicos se manejan en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q21" value="a">a) Numérico, carácter y lógico.<br>
+  <input type="radio" name="q21" value="b">b) Entero, flotante y cadena.<br>
+  <input type="radio" name="q21" value="c">c) Numérico, booleano y texto.<br>
+  <input type="radio" name="q21" value="d">d) Decimal, booleano y carácter.<br>
+</div>
+
+<!-- Pregunta 22 -->
+<p>22. ¿Cuáles son las estructuras de datos que se pueden utilizar en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q22" value="a">a) Arreglos y listas.<br>
+  <input type="radio" name="q22" value="b">b) Pilas y colas.<br>
+  <input type="radio" name="q22" value="c">c) Diccionarios y conjuntos.<br>
+  <input type="radio" name="q22" value="d">d) Únicamente arreglos.<br>
+</div>
+
+<!-- Pregunta 23 -->
+<p>23. ¿Cuál es la estructura general de un algoritmo en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q23" value="a">a) Inicio ... Fin.<br>
+  <input type="radio" name="q23" value="b">b) Procedimiento ... FinProcedimiento.<br>
+  <input type="radio" name="q23" value="c">c) Proceso ... FinProceso.<br>
+  <input type="radio" name="q23" value="d">d) Función ... FinFunción.<br>
+</div>
+
+<!-- Pregunta 24 -->
+<p>24. ¿Qué palabras clave se utilizan para delimitar el inicio y el fin de un algoritmo en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q24" value="a">a) Inicio ... Fin.<br>
+  <input type="radio" name="q24" value="b">b) Procedimiento ... FinProcedimiento.<br>
+  <input type="radio" name="q24" value="c">c) Proceso ... FinProceso.<br>
+  <input type="radio" name="q24" value="d">d) Función ... FinFunción.<br>
+</div>
+
+<!-- Pregunta 25 -->
+<p>25. ¿Cómo se definen las variables en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q25" value="a">a) Usando la palabra clave "var".<br>
+  <input type="radio" name="q25" value="b">b) Mediante la palabra clave "variable".<br>
+  <input type="radio" name="q25" value="c">c) No es necesario definir variables.<br>
+  <input type="radio" name="q25" value="d">d) Con la instrucción "Dimension".<br>
+</div>
+
+<!-- Pregunta 26 -->
+<p>26. ¿Cuántos tipos de datos simples existen en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q26" value="a">a) 2.<br>
+  <input type="radio" name="q26" value="b">b) 3.<br>
+  <input type="radio" name="q26" value="c">c) 4.<br>
+  <input type="radio" name="q26" value="d">d) 5.<br>
+</div>
+
+<!-- Pregunta 27 -->
+<p>27. ¿Qué tipos de datos incluye el tipo "Numérico" en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q27" value="a">a) Enteros y fraccionarios.<br>
+  <input type="radio" name="q27" value="b">b) Enteros y cadenas de texto.<br>
+  <input type="radio" name="q27" value="c">c) Decimales y lógicos.<br>
+  <input type="radio" name="q27" value="d">d) Enteros, decimales y lógicos.<br>
+</div>
+
+<!-- Pregunta 28 -->
+<p>28. ¿Cuál es el valor máximo que puede tomar el tipo de dato "Lógico" en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q28" value="a">a) VERDADERO.<br>
+  <input type="radio" name="q28" value="b">b) FALSO.<br>
+  <input type="radio" name="q28" value="c">c) CIERTO.<br>
+  <input type="radio" name="q28" value="d">d) FICTICIO.<br>
+</div>
+
+<!-- Pregunta 29 -->
+<p>29. ¿Cómo se encierran los caracteres o cadenas de caracteres en PSEINT?</p>
+<div class="option">
+  <input type="radio" name="q29" value="a">a) Entre paréntesis ( ).<br>
+  <input type="radio" name="q29" value="b">b) Entre corchetes [ ].<br>
+  <input type="radio" name="q29" value="c">c) Entre comillas dobles " ".<br>
+  <input type="radio" name="q29" value="d">d) Entre comillas simples ' '.<br>
+</div>
+
+            <!-- Pregunta 30 -->
+            <div class="question">
+          <h1>Esta facil </h1>
+            </div>
+            <div class="option">
+              <input type="radio" name="q30" value="a"> Si 
+            </div>
+            <div class="option">
+              <input type="radio" name="q30" value="b"> Super Facil 
+            </div>
+            <div class="option">
+              <input type="radio" name="q30" value="c"> No costo nada
+        
+
+    
+  </form>
+
+        <!-- Agregar más preguntas si es necesario -->
+    
+        <button type="submit">Finalizar examen</button>
+        <div id="password-form">
+          
+       
+    
+        <button type="button" id="reset-button" style="display: none;" onclick="resetExam()">Restablecer Examen</button>
+    
+    </form>
+    
+    <body>
+        
+    
+     
+        <!-- Botón para restablecer el examen -->
+        <button type="button" id="reset-button" style="display: none;" onclick="resetExam()">Restablecer Examen</button>
+        <script>
+            
+            const examForm = document.getElementById("exam-form");
+            const passwordForm = document.getElementById("password-form");
+            const passwordInput = document.getElementById("password-input");
+            const resetButton = document.getElementById("reset-button");
+            let examCompleted = false;
+    
+            // Función para verificar la contraseña y mostrar el formulario del examen
+            function checkPassword() {
+                const password = passwordInput.value.trim();
+    
+                // Verificar la contraseña (puedes cambiar "contraseña123" por la contraseña deseada)
+                if (password === "contraseña123") {
+                    passwordForm.style.display = "none";
+                    examForm.style.display = "block";
+                    localStorage.setItem("formPassword", true);
+                    resetButton.style.display = "block";
+                } else {
+                    alert("Contraseña incorrecta. Inténtalo nuevamente.");
+                }
+            }
+    
+            // Mostrar el formulario de contraseña si aún no se ha ingresado la contraseña
+            if (!localStorage.getItem("formPassword")) {
+                passwordForm.style.display = "block";
+            }
+    
+            // Redirigir a contraseña.html si se abandona el examen o se cambia de página
+            window.addEventListener("beforeunload", (event) => {
+                if (!examCompleted) {
+                    localStorage.setItem("formAbandoned", true);
+                    event.preventDefault();
+                    event.returnValue = "¿Estás seguro de abandonar el examen? Los progresos se perderán.";
+                }
+            });
+    
+            // Detectar cambios de visibilidad en la página
+            document.addEventListener("visibilitychange", () => {
+                if (document.visibilityState === "hidden") {
+                    examCompleted = true;
+                    localStorage.setItem("formAbandoned", true);
+                    window.location.href = "contrasena.html";
+                }
+            });
+    
+            let score = 0;
+        const totalQuestions = 30;
+
+        // Función para verificar la contraseña y mostrar el formulario del examen
+        function checkPassword() {
+            const password = document.getElementById("password-input").value.trim();
+
+            // Verificar la contraseña (puedes cambiar "contraseña123" por la contraseña deseada)
+            if (password === "contraseña123") {
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("exam-form").style.display = "block";
+                document.getElementById("reset-button").style.display = "block";
+            } else {
+                alert("Contraseña incorrecta. Inténtalo nuevamente.");
+            }
+        }
+
+        // Función para validar las respuestas y calcular la puntuación
+        function validateAnswers() {
+            const answers = [
+                // Agregar aquí las respuestas correctas de cada pregunta
+               // Preguntas sobre Macros en Excel
+               "b", "a", "a", "b", "c", "b", "d", "a", "a", "a", "a", "c", "b", "d", "b", "c", "c", "a", "a", "d", "a", "a", "a", "a", "c", "b", "d", "b", "c", "c"
+            ];
+
+            const formElements = document.getElementById("exam-form").elements;
+
+            for (let i = 0; i < totalQuestions; i++) {
+                const questionName = `q${i + 1}`;
+                const selectedAnswer = formElements[questionName].value;
+
+                if (selectedAnswer === answers[i]) {
+                    score += 2; // Sumar 0.5 puntos por respuesta correcta
+                }
+            }
+
+            // Redondear la puntuación a 2 decimales
+            score = Math.round(score * 100) / 100;
+        }
+
+// Función para mostrar la puntuación final y redirigir a contraseña_2.html
+function showFinalScore() {
+alert(`Tu puntuación final es: ${score}`);
+localStorage.setItem("formCompleted", true);
+localStorage.removeItem("formAbandoned");
+localStorage.removeItem("formPassword");
+resetButton.style.display = "block";
+window.location.href = "contraseña_2.html";
+}
+
+// Manejar el evento de envío del formulario (finalización del examen)
+examForm.addEventListener("submit", (event) => {
+event.preventDefault();
+
+// Obtener todas las respuestas seleccionadas
+// Agregar más respuestas si es necesario
+
+// Validar las respuestas y calcular la puntuación
+// Agregar más validaciones si es necesario
+validateAnswers();
+
+// Marcar el examen como completado
+examCompleted = true;
+
+// Mostrar la puntuación final y redirigir a contraseña_2.html
+showFinalScore();
+});
+
+// Función para restablecer el examen
+function resetExam() {
+localStorage.removeItem("formCompleted");
+resetButton.style.display = "none";
+examCompleted = false;
+score = 0;
+window.location.reload(); // Recargar la página para volver al estado inicial
+}
+
+// Verificar si el examen ya ha sido completado previamente y redirigir a contraseña_2.html
+if (localStorage.getItem("formCompleted")) {
+showFinalScore();
+}
+
+// Mostrar el botón para restablecer el examen si se ha completado previamente
+if (localStorage.getItem("formCompleted")) {
+resetButton.style.display = "block";
+}
+
+// Verificar si el examen ya se ha completado
+const isExamCompleted = localStorage.getItem('formCompleted') === 'true';
+const isFormLocked = localStorage.getItem('formAbandoned') === 'true';
+
+// Bloquear la página si el examen no se ha completado
+if (!isExamCompleted && isFormLocked) {
+alert('Esta página está bloqueada. Ingresa la contraseña en la página contraseña.html y completa el examen para desbloquearla.');
+window.location.href = 'contrasena.html';
+}
+
+
+</script>
+     
+    </body>
+</html>

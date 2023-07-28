@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borrar Datos</title>
+</head>
+<body>
+  <h1>Página para Borrar Datos</h1>
+  <button id="clearLocalStorage">Borrar LocalStorage</button>
+ <a href="index.html"><button>Ir a formulario</button></a> 
+  <script>
+    document.getElementById("clearLocalStorage").addEventListener("click", function() {
+      // Esta función ejecuta localStorage.clear() para borrar todos los datos almacenados en el LocalStorage.
+      localStorage.clear();
+      alert("LocalStorage limpiado correctamente.");
+    });
+  </script>
+</body>
+</html>
